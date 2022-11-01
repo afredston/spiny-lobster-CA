@@ -1,0 +1,678 @@
+
+  
+    
+      uid=CCE,o=lter,dc=ecoinformatics,dc=org
+      all
+    
+    
+      public
+      read
+    
+  
+  
+    188
+    doi:10.6073/pasta/9e38121ebb26f1b59b7b39b2eff844fa
+    Data pertaining to lobster phyllosoma, Panulirus interruptus, collection methods, locations, identification and staging (1951-2008, months of July and August)
+    
+      CalCOFI - Scripps Institution of Oceanography
+      			CalCOFI
+Scripps Institution of Oceanography
+8880 Biological Grade
+(235 MESOM Laboratory)
+			La Jolla, California 92037  USA
+    
+    
+      Tony Koslow
+      SIO
+      tkoslow@ucsd.edu
+    
+    
+      California Current Ecosystem LTER
+      			California Current Ecosystem LTER Program Office
+Scripps Institution of Oceanography
+University of California, San Diego
+9500 Gilman Dr.
+			La Jolla, California 92093-0218  USA
+    
+    2017-03-28
+    The very large collection of plankton hauls taken in connection with the California Cooperative Oceanic Fisheries Investigations (CalCOFI) has afforded a unique opportunity to study the occurrence and distribution of the phyllosoma larvae of the spiny lobster.  
+
+JOHNSON, MARTIN W. 1960. The Distribution of Larvae of the Spiny  Lobster, Panulirus interruptus (Randall) with Records on P. Gracilis Streets. California Cooperative Fisheries Investigation 7: 413-46.
+    
+      invertebrates
+      habitats
+      marine
+      taxonomy
+      ecology
+      food webs
+      populations
+      population dynamics
+      light
+      zooplankton
+      LTER Controlled Vocabulary
+    
+    
+      Population Studies
+      LTER Core Areas
+    
+    
+      The data available here are intended for scholarly use by the research community,
+                with the express understanding that data users will properly acknowledge the originating investigator. Use or
+                reproduction of any material herein for any commercial purpose is prohibited without prior written permission
+                from the responsible party.
+            
+    
+    
+      
+        http://oceaninformatics.ucsd.edu/datazoo/catalogs/ccelter/datasets/188
+      
+    
+    
+      
+        
+          
+            1951
+          
+          
+            2008
+          
+        
+      
+    
+    
+      CCE LTER Information Manager
+      California Current Ecosystem LTER
+      ccelter-im@ucsd.edu
+    
+    
+      California Current Ecosystem LTER
+      			California Current Ecosystem LTER Program Office
+Scripps Institution of Oceanography
+University of California, San Diego
+9500 Gilman Dr.
+			La Jolla, California 92093-0218  USA
+    
+    
+      
+        
+          
+            General Methods
+            More information will be given as the Materials and Methods section is drawn up.  For now references include:
+
+JOHNSON, MARTIN W. 1956. The Larval Development of the California Spiny Lobster, Panulirus Interruptus (Randall), with Notes on Panulirus Gracilis Streets. Proceedings of the California Academy of Sciences.4: 1-19.
+
+JOHNSON, MARTIN W. 1960. The Offshore Drift of Larvae of the California Spiny Lobster Panulirus Interruptus. California Cooperative Fisheries Investigation 7: 147-161.
+
+JOHNSON, MARTIN W. 1960. The Distribution of Larvae of the Spiny  Lobster, Panulirus Interruptus (Randall) with Records on P. Gracilis Streets. California Cooperative Fisheries Investigation 7: 413-46.
+
+JOHNSON, MARTIN W. and KNIGHT, MARGARET. 1966. The Phyllosoma Larvae of the Spiny Lobster Panulirus Inflatus (Bouvier). Crustaceana 10 (1): 31-47
+
+DEXTER, DEBORAH M. 1972.  Molting and Growth in Laboratory Reared Phyllosomes of the California Spiny Lobster, Panulirus Interrupts. California Fish and Game 58(2): 107-115.
+          
+        
+      
+      
+        
+          
+            Frequency
+            CalCOFI tows collected in the months of July and August 1951-2009
+          
+        
+      
+    
+    
+      OccurrenceandDistributionofSpinyLobsterPhyllosomaPanulirusinterruptusRandall
+      Main data table for dataset
+      
+        table_188.csv
+        ASCII
+        
+          
+            1
+            0
+            \n
+            column
+            
+              ,
+              "
+              \
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/knb-lter-cce/188/4/2e66465fa17f78cdc15a2bfc9dce652d
+          
+        
+      
+      
+        
+          Sorting Lab
+          A word or set of words by which a person, animal, place, or thing is known, addressed, or referred to 
+          string
+          
+            
+              
+                
+                  A word or set of words by which a person, animal, place, or thing is known, addressed, or referred to 
+                
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Year Month of Tow 
+          Pacific Standard Time date. 
+          string
+          
+            
+              
+                
+                  Pacific Standard Time date. 
+                
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Tow Collection Day
+          Pacific Standard Time date. 
+          date
+          
+            
+              YYYY-MM-DD
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Ship
+          the type of physical staging for instrument deployment or data gathering
+          string
+          
+            
+              
+                
+                  the type of physical staging for instrument deployment or data gathering
+                
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Station Line
+          location in which an animal was observed
+          double
+          
+            
+              
+                
+                  location in which an animal was observed
+                
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Station Number
+          location in which an animal was observed
+          double
+          
+            
+              
+                
+                  location in which an animal was observed
+                
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Latitude
+          latitude measured from the equator in decimal degrees, South is negative
+          double
+          
+            
+              
+                degree
+              
+              
+                real
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Longitude
+          longitude measured from the Prime Meridian in decimal degrees, West is negative
+          double
+          
+            
+              
+                degree
+              
+              
+                real
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Max Tow Depth
+          measurement or sample collection distance from water column surface
+          double
+          
+            
+              
+                meter
+              
+              
+                real
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Volume Water Filtered
+          biomass
+          double
+          
+            
+              
+                milliliterPerThousandCubicMeter
+              
+              
+                natural
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Aliquot %
+          Percentage of a sample preserved out of 100% collected
+          double
+          
+            
+              
+                
+                  Percentage of a sample preserved out of 100% collected
+                
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Aliquot Adjustment Value
+          correction factor
+          string
+          
+            
+              
+                dimensionless
+              
+              
+                real
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Total Phyllosoma
+          From the set of non-negative integers {0,1,2,...}, the number of items. 
+          double
+          
+            
+              
+                number
+              
+              
+                integer
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Stage 1
+          From the set of non-negative integers {0,1,2,...}, the number of items. 
+          double
+          
+            
+              
+                number
+              
+              
+                integer
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Stage 2
+          From the set of non-negative integers {0,1,2,...}, the number of items. 
+          double
+          
+            
+              
+                number
+              
+              
+                integer
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Stage 3
+          From the set of non-negative integers {0,1,2,...}, the number of items. 
+          double
+          
+            
+              
+                number
+              
+              
+                integer
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Stage 4
+          From the set of non-negative integers {0,1,2,...}, the number of items. 
+          double
+          
+            
+              
+                number
+              
+              
+                integer
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Stage 5
+          From the set of non-negative integers {0,1,2,...}, the number of items. 
+          double
+          
+            
+              
+                number
+              
+              
+                integer
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Stage 6
+          From the set of non-negative integers {0,1,2,...}, the number of items. 
+          double
+          
+            
+              
+                number
+              
+              
+                integer
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Stage 7
+          From the set of non-negative integers {0,1,2,...}, the number of items. 
+          double
+          
+            
+              
+                number
+              
+              
+                integer
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Stage 8
+          From the set of non-negative integers {0,1,2,...}, the number of items. 
+          double
+          
+            
+              
+                number
+              
+              
+                integer
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Stage 9
+          From the set of non-negative integers {0,1,2,...}, the number of items. 
+          double
+          
+            
+              
+                number
+              
+              
+                integer
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Stage 10
+          From the set of non-negative integers {0,1,2,...}, the number of items. 
+          double
+          
+            
+              
+                number
+              
+              
+                integer
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Stage 11
+          From the set of non-negative integers {0,1,2,...}, the number of items. 
+          double
+          
+            
+              
+                number
+              
+              
+                integer
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+        
+          Study Flag
+          Flag denoted the certainty of the study of origination for these data.
+          string
+          
+            
+              
+                
+                  
+                    1
+                    Exact match on line, station, and date
+                  
+                  
+                    2
+                    Exact match on date, line and/or station had to be rounded to match
+                  
+                  
+                    3
+                    Exact match on line and station, date matches +/- 1 day (this is to   account for possible time zone inconsistencies)
+                  
+                  
+                    4
+                    Date matches +/- 1 day, line and/or station had to be rounded to   match
+                  
+                  
+                    5
+                    Exact match on line and station, date does not match
+                  
+                  
+                    6
+                    Determined from CalCOFI Memorandums
+                  
+                  
+                    7
+                    Unmatched
+                  
+                
+              
+            
+          
+          
+            NULL
+            No data available
+          
+        
+      
+    
+  
+  
+    
+      
+        
+          
+        
+        
+          
+        
+        
+          
+          
+        
+        
+          
+        
+        
+          2 pi radians comprise a unit circle.
+        
+        
+          360 degrees comprise a unit circle
+        
+        
+          SI unit of length
+        
+        
+           milliliters per one thousand meters cubed
+        
+        
+          a designation asserting the absence of an associated unit
+        
+        
+          a number
+        
+      
+    
+  

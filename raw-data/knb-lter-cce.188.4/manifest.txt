@@ -1,0 +1,5 @@
+Manifest file for knb-lter-cce.188.4-4c9184f37cff01bcdc32dc486ec36961.zip created on Fri Feb 18 10:52:31 MST 2022
+table_188.csv (196700 bytes)
+knb-lter-cce.188.4.xml (31532 bytes)
+knb-lter-cce.188.4.txt (14752 bytes)
+knb-lter-cce.188.4.report.xml (21754 bytes)

@@ -1,0 +1,81 @@
+---
+title: "Exploring spiny lobster data"
+author: "Alexa Fredston"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+Here are some plots of the CalCOFI spiny lobster larval samples over space and time. Spiny lobster are not sampled in the bottom trawl survey. They are present in the PISCO community data, although I didn't plot it because it looks like their abundance is always between 1 and 4 individuals in the swath survey--we could potentially get true absences from that dataset but it will be hard to infer abundance change. They are probably also sampled by Reef Check. 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+```
+
+```{r packages}
+library(tidyverse)
+library(here)
+library(lubridate)
+library(wcfish) # Chris Free's custom package for West Coast data -- https://github.com/cfree14/wcfish
+library(sf)
+# pisco_tax <- read_csv(here("raw-data","PISCO_kelpforest_taxon_table.1.2.csv")) # https://data.piscoweb.org/metacatui/#view/doi:10.6085/AA/PISCO_kelpforest.1.6
+# 
+# pisco <- read_csv(here("raw-data","PISCO_kelpforest_swath.1.2.csv")) %>% 
+#   left_join(pisco_tax, by="classcode") %>% 
+#   filter(common_name=="Spiny Lobster")
+
+larvae <- read_csv(here("raw-data/knb-lter-cce.188.4","table_188.csv")) %>% #downloaded from: https://doi.org/10.6073/pasta/9e38121ebb26f1b59b7b39b2eff844fa 
+  rename(date = `Tow Collection Day`,
+         lat = `Latitude (º)`,
+         lon = `Longitude (º)`,
+         tot = `Total Phyllosoma`) 
+
+blocks <- blocks
+
+larvae <- larvae %>% 
+  mutate(date = ymd(date), 
+         year = year(date), 
+         lon_round = round(lon, digits=1),
+         lat_round = round(lat, digits=1))
+
+usoutline <- rnaturalearth::ne_states("united states of america", returnclass = "sf") %>% 
+  st_sf()
+
+larvae_tot <- larvae %>%
+  group_by(lat_round, lon_round) %>% 
+  summarise(sum = sum(tot))
+  
+```
+
+```{r calcofi, fig.cap="Frequency of CalCOFI spiny lobster phyllosoma records over time. Note that some years are missing."}
+larvae %>% 
+  group_by(year) %>% 
+  summarise(n=n()) %>% 
+  ggplot(., aes(x=year, y=n)) +
+  geom_point() +
+  geom_line() +
+  labs(x="Year", y="Number of Records") +
+  theme_classic()
+```
+
+```{r calcofi-map, fig.cap="Total CalCOFI phyllosoma abundance over all time superimposed on CDFW fishing blocks."}
+ggplot(blocks %>% filter(block_lat_dd<36, block_type=="Inshore")) + 
+  geom_sf() + 
+ # geom_sf_label(aes(label=block_id)) + 
+  geom_sf(data=usoutline, color="#999999") +
+  scale_x_continuous(limits=c(-122, -117)) + 
+  scale_y_continuous(limits=c(31.8, 35.5)) +
+  theme_classic() + 
+  geom_point(data=larvae_tot, aes(x=lon_round, y=lat_round, color=sum, fill=sum)) +
+  labs(x="Latitude", y="Longitude", fill="Total", color="Total") 
+```
+
+```{r calcofi-tile, fig.cap="CalCOFI phyllosoma abundance over latitude and time."}
+larvae %>% 
+  group_by(lat_round, year) %>% 
+  summarise(sum = sum(tot)) %>% 
+  ggplot(aes(x=year, y=lat_round, fill=sum, color=sum)) +
+  geom_tile() +
+  labs(x="Year", y="Latitude", fill="Total", color="Total") +
+  theme_classic()
+```
